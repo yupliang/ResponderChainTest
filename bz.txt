@@ -1,1 +1,14 @@
 程序中每个时刻只能有一个UIWindow是keyWindow
+
+user touch -- >  which responder the user touched
+		 (hitTest:withEvent)
+	(1) the responder doesn’t implement the relevant method;
+	(2) the responder implements the relevant method to call super
+	
+	
+	
+	
+	
+	
+	
+	Q:nextResponder 什么时候调用?.

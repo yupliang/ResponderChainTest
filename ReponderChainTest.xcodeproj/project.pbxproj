@@ -15,6 +15,9 @@
 		FDF34E7F1F74F8DD00CB0DAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF34E7E1F74F8DD00CB0DAA /* main.m */; };
 		FDF34E891F74F8DD00CB0DAA /* ReponderChainTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF34E881F74F8DD00CB0DAA /* ReponderChainTestTests.m */; };
 		FDF34E941F74F8DD00CB0DAA /* ReponderChainTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF34E931F74F8DD00CB0DAA /* ReponderChainTestUITests.m */; };
+		FDF34EA31F75115B00CB0DAA /* UIApplication+LZSwizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF34EA21F75115B00CB0DAA /* UIApplication+LZSwizzing.m */; };
+		FDF34EA61F751B3D00CB0DAA /* HTView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF34EA41F751B3D00CB0DAA /* HTView.m */; };
+		FDF34EA91F751BCC00CB0DAA /* LZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF34EA81F751BCC00CB0DAA /* LZButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FDF34E8F1F74F8DD00CB0DAA /* ReponderChainTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReponderChainTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF34E931F74F8DD00CB0DAA /* ReponderChainTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReponderChainTestUITests.m; sourceTree = "<group>"; };
 		FDF34E951F74F8DD00CB0DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF34EA11F75115B00CB0DAA /* UIApplication+LZSwizzing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LZSwizzing.h"; sourceTree = "<group>"; };
+		FDF34EA21F75115B00CB0DAA /* UIApplication+LZSwizzing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LZSwizzing.m"; sourceTree = "<group>"; };
+		FDF34EA41F751B3D00CB0DAA /* HTView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTView.m; sourceTree = "<group>"; };
+		FDF34EA51F751B3D00CB0DAA /* HTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTView.h; sourceTree = "<group>"; };
+		FDF34EA71F751BCC00CB0DAA /* LZButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZButton.h; sourceTree = "<group>"; };
+		FDF34EA81F751BCC00CB0DAA /* LZButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				FDF34E701F74F8DD00CB0DAA /* AppDelegate.m */,
 				FDF34E721F74F8DD00CB0DAA /* ViewController.h */,
 				FDF34E731F74F8DD00CB0DAA /* ViewController.m */,
+				FDF34EA71F751BCC00CB0DAA /* LZButton.h */,
+				FDF34EA81F751BCC00CB0DAA /* LZButton.m */,
+				FDF34EA51F751B3D00CB0DAA /* HTView.h */,
+				FDF34EA41F751B3D00CB0DAA /* HTView.m */,
+				FDF34EA11F75115B00CB0DAA /* UIApplication+LZSwizzing.h */,
+				FDF34EA21F75115B00CB0DAA /* UIApplication+LZSwizzing.m */,
 				FDF34E751F74F8DD00CB0DAA /* Main.storyboard */,
 				FDF34E781F74F8DD00CB0DAA /* Assets.xcassets */,
 				FDF34E7A1F74F8DD00CB0DAA /* LaunchScreen.storyboard */,
@@ -194,6 +209,7 @@
 		FDF34E641F74F8DD00CB0DAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LZ;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = liangzai123;
 				TargetAttributes = {
@@ -266,8 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF34E741F74F8DD00CB0DAA /* ViewController.m in Sources */,
+				FDF34EA31F75115B00CB0DAA /* UIApplication+LZSwizzing.m in Sources */,
 				FDF34E7F1F74F8DD00CB0DAA /* main.m in Sources */,
+				FDF34EA91F751BCC00CB0DAA /* LZButton.m in Sources */,
 				FDF34E711F74F8DD00CB0DAA /* AppDelegate.m in Sources */,
+				FDF34EA61F751B3D00CB0DAA /* HTView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G266G4297P;
+				DEVELOPMENT_TEAM = 6NBH84DMZU;
 				INFOPLIST_FILE = ReponderChainTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.liangzai.www.ReponderChainTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,8 +465,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G266G4297P;
+				DEVELOPMENT_TEAM = 6NBH84DMZU;
 				INFOPLIST_FILE = ReponderChainTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.liangzai.www.ReponderChainTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
